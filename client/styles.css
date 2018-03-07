@@ -24,21 +24,21 @@
   justify-content: space-around;
 }
 
-ul {
+.ulist {
   margin: 0;
   padding: 0;
   padding-left: 15px;
 }
 
-li {
+.list {
   padding: 10px;
 }
 
-div {
+.block {
   display: block;
 }
 
-span {
+.span_row {
   padding-right: 10px;
 }
 

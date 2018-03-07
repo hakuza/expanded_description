@@ -24,44 +24,44 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="container">
-        <div className="what_you_get">
+      <div className="block" id="container">
+        <div className="what_you_get block">
           <h3>What will I Learn?</h3>
-          <div id="columnHolder">
-            <div id="column1">
-              <ul className="what_you_get_items">
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/></span>
+          <div className="box" id="columnHolder">
+            <div id="column1" className="box">
+              <ul className="what_you_get_items ulist">
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/></span>
                   {faker
                     .lorem
                     .sentence()}</li>
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/></span>
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/></span>
                   {faker
                     .lorem
                     .sentence()}</li>
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/></span>
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/></span>
                   {faker
                     .lorem
                     .sentence()}</li>
               </ul>
             </div>
-            <div id="coloumn2">
+            <div className="box" id="coloumn2">
               <ul className="what_you_get_items">
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/>
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/>
                   </span>{faker
                     .lorem
                     .sentence()}
                 </li>
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/></span>{faker
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/></span>{faker
                     .lorem
                     .sentence()}
                 </li>
-                <li>
-                  <span><FontAwesomeIcon icon={faCheck}/>
+                <li className="list">
+                  <span className="span_row"><FontAwesomeIcon icon={faCheck}/>
                   </span>{faker
                     .lorem
                     .sentence()}
@@ -71,10 +71,10 @@ class App extends React.Component {
           </div>
         </div>
         <h3>Requirements</h3>
-        <ul>
-          <li>Basic computer skills</li>
-          <li>Ability to install software on your computer</li>
-          <li>Admin rights might be required for software installation</li>
+        <ul className="ulist">
+          <li className="list">Basic computer skills</li>
+          <li className="list">Ability to install software on your computer</li>
+          <li className="list">Admin rights might be required for software installation</li>
         </ul>
         <h3>Description</h3>
         {ReactHtmlParser(this.state.description)}
